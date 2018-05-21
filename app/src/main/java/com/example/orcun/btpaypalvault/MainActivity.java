@@ -35,10 +35,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-
 public class MainActivity extends AppCompatActivity implements PaymentMethodNonceCreatedListener, BraintreeResponseListener, ConfigurationListener {
 
-    final int REQUEST_CODE = 1;
     final String get_token = "http://orcodevbox.co.uk/BTOrcun/tokenGen.php";
     final String send_payment_details = "http://orcodevbox.co.uk/BTOrcun/iosPayment.php";
     String token, amount, nonce;
